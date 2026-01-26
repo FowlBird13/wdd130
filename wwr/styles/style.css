@@ -33,7 +33,7 @@ footer {
 }
 
 
-/* element properties and nested elements */
+/* element pseudo-classes and nested elements */
 nav a:hover {
     background-color: #d9a23d;
     color: black;
