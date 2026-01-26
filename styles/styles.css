@@ -1,0 +1,75 @@
+/* using an asterisk applies the change to every element. The following element outlines everything in red */
+/* 
+* { 
+    border: 1px solid red;
+} */
+
+body {
+    margin: 0;
+    font-size: 24px; /* using pixels for font size is risky so use em instead. em uses the font size of the body. */
+    background-color: powderblue;
+}
+
+nav {
+    padding: 15px 20px 15px 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav a { /* only affect the links in nav and no other links */
+    padding: 2px 2px 2px 2px;
+    border: 1px solid black;
+    color: white;
+    background-color: firebrick;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: black;
+    color: powderblue;
+}
+
+img { /* centering an image can be done with the command below or by placing it within another element and centering it relative to that with text-line: center. They are tricky */
+    width: 35%;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    color: firebrick;
+}
+
+#title { /* use "#" to denote an id. Only ONE item on the page can have that id */
+    font-size: 4em; /* this is four times the size of the body's font */
+    text-align: center;
+}
+
+#content {
+    margin: 40px auto;
+    background-color: white;
+    max-width: 900px;
+    padding: 40px;
+}
+
+#logo {
+    width: 25%;
+    margin-bottom: -80px;
+}
+
+.shadow { /* Use the "." to create a class which can be applied to multiple elements */
+    background-color: lightgray;
+}
+
+/* more specific identifiers will take priority over which element was styled first.
+classes beat element types and id's beat classes. */
+
+
+/* the box model is as follows: 
+content
+padding
+border
+margin
+*/
