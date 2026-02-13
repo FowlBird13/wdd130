@@ -1,0 +1,170 @@
+/* This is the css for the index.html page of my main webpage titled Portal Page */
+
+/*
+Colors to use:
+    text:       black       #2a2b2a
+    Headers:    grey        #706c61
+    Background: cream       #f8f4e3
+    Accent1:    red         #e5446d
+    Accent2:    orange      #ff8966
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+body {
+    font-family: Nunito, arial, sans-serif;
+    font-size: 22px;
+    background-color: #706c61;
+    color: #2a2b2a;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    grid-row: 1/2;
+    background-color: #e5446d;
+    padding: 10px 0px 10px 10px;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+nav ul li {
+    background-color: #f8f4e3;
+    min-width: 200px;
+    
+    border-left: 5px solid #2a2b2a;
+    
+    float: left;
+    padding: 0px;
+    margin: 10px 4px 10px 4px;
+    transition-duration: 0.25s;
+}
+
+nav ul li a {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: #2a2b2a;
+    text-align: center;
+    font-family: arvo, verdana, sans-serif;
+    font-size: 1.5em;
+    transition-duration: 0.25s;
+}
+
+nav ul li:hover {
+    background-color: #2a2b2a;
+    border-left: 20px solid #f8f4e3;
+    min-width: 185px;
+}
+
+nav ul li a:hover {
+    color: #f8f4e3;
+}
+
+h1, h2, h3 {
+    font-family: arvo, verdana, sans-serif;
+    color: #2a2b2a;
+}
+
+main {
+    grid-row: 2/3;
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f4e3;
+    padding: 20px;
+    display:grid;
+}
+
+#hero summary {
+    font-size: 1.2em;
+    font-weight:bold;
+    color: #706c61;
+    text-indent: 1em;
+}
+
+#hero-img {
+    width: 30%;
+    float: right;
+    margin: 20px 20px 20px 20px;
+    border: 5px solid #706c61;
+    box-shadow: 5px 5px 5px #706c6188;
+    border-radius: 5px;
+}
+
+hr {
+    width: 80%;
+    background-color: #ff8966;
+    color: #ff8966;
+    height: 2px;
+    border-width: 0px;
+}
+
+#page_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#page_links section {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #ff8966;
+    text-align: center;
+    margin: 10px 10px;
+    box-shadow: 5px 5px 5px #706c6188;
+    transition-duration: 0.25s;
+    z-index: 1;
+}
+
+#page_links a {
+    text-decoration: none;
+}
+
+#page_links section:hover {
+    background-color: #e5446d;
+    scale: 1.05;
+    box-shadow: 1px 10px 5px #706c6188;
+    z-index: 0;
+}
+
+#page_links section p {
+    background-color:#f8f4e3;
+    border-radius: 5px;
+    color: #2a2b2a;
+}
+
+#page_links section img {
+    border: 5px solid #2a2b2a;
+    border-radius: 15px;
+    width: 80%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+#logo {
+    height: 80px;
+    border: 3px solid #706c61;
+    float: left;
+}
+
+footer {
+    grid-row: 3/4;
+    background-color: #e5446d;
+    color: #f8f4e3;
+    padding: 10px;
+}
