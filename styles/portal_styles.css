@@ -154,6 +154,11 @@ hr {
     width: 80%;
     aspect-ratio: 1/1;
     overflow: hidden;
+
+
+    height: auto;
+    object-fit: cover;
+    object-position: top;
 }
 
 #logo {
