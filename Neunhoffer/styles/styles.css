@@ -213,6 +213,7 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1/1.1;
     object-position: top;
     overflow: hidden;
+    box-shadow: #888888 5px 5px 10px;
 }
 
 #catalogue section a {
