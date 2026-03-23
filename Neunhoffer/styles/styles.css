@@ -1,0 +1,251 @@
+:root {
+    --primary: #FFFFFF;
+    --secondary: #000000;
+    --accent-one: #FF0000;
+    --accent-two: #0000FF;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 1em;
+
+}
+
+header {
+    text-align: center;
+    background-color: var(--accent-one);
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, button {
+    font-family: 'Times New Roman', serif;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: none;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn {
+    border: 0px;
+    width: 100%;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: var(--primary);
+  border-bottom: 1px solid black;
+}
+
+.navbar a:hover {
+    border: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 600px;
+  padding: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo-link {
+    width: 300px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+#logo {
+    width: 100px;
+    margin: 10px;
+}
+
+#home-page {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#color-wear {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#color-wear section {
+    text-align: center;
+    border: 2px solid var(--accent-two);
+    padding: 10px;
+}
+
+#color-wear section a img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1.1;
+    object-position: top;
+    overflow: hidden;
+}
+
+#color-wear section a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.2em;
+}
+
+#seasonal-wear {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 75px 0px 25px 0px;
+    gap: 10px
+}
+
+#seasonal-wear section {
+    border: 2px solid var(--accent-two);
+}
+
+#seasonal-wear section a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#seasonal-wear section a img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1.2/1;
+    object-position: top;
+    overflow: hidden;
+    padding: 10px;
+    float: left;
+}
+
+#seasonal-wear section a h3 {
+    font-size: 1.4em;
+    /* border: 1px solid black; */
+    padding-top: 180px;
+}
+
+#seasonal-wear section a p {
+    padding: 10px;
+    padding-top: 0;
+    float:inline-start;
+}
+
+
+
+
+
+
+
+
+#apparels {
+    margin: 0 auto;
+    max-width: 1000px;
+}    
+
+#catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#catalogue section {
+    text-align: center;
+    /* border: 2px solid var(--accent-two); */
+    padding: 10px;
+}
+
+#catalogue section a img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1.1;
+    object-position: top;
+    overflow: hidden;
+}
+
+#catalogue section a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid var(--accent-two);
+    padding: 10px;
+    margin-top: -70px
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+footer a {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #BBBBBB;
+}
+
+footer a:hover {
+    box-shadow: 5px 5px 5px #888888;
+}
