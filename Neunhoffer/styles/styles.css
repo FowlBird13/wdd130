@@ -8,7 +8,7 @@
 body {
     font-family: Georgia, serif;
     font-size: 1em;
-    background-color: #EEEEEE;
+    background-color: var(--accent-two);
 }
 
 header {
@@ -118,13 +118,16 @@ h1, h2, h3, h4, h5, button {
 #color-wear {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 50px;
 }
 
 #color-wear section {
     text-align: center;
-    border: 2px solid var(--accent-two);
+    /* border: 2px solid var(--accent-one); */
+    border-radius: 3px;
     padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: #53477c 5px 5px 10px;
 }
 
 #color-wear section a img {
@@ -134,7 +137,9 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1/1.1;
     object-position: top;
     overflow: hidden;
-    box-shadow: #888888 5px 5px 10px;
+    border: solid red 2px;
+    border-radius: 5px;
+    /* box-shadow: #888888 5px 5px 10px; */
 }
 
 #color-wear section a {
@@ -151,7 +156,9 @@ h1, h2, h3, h4, h5, button {
 }
 
 #seasonal-wear section {
-    border: 2px solid var(--accent-two);
+    background-color: #f9f9f9;
+    /* border: 2px solid var(--accent-one); */
+    box-shadow: #53477c 5px 5px 10px;
 }
 
 #seasonal-wear section a {
@@ -197,13 +204,16 @@ h1, h2, h3, h4, h5, button {
 #catalogue {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 50px;
 }
 
 #catalogue section {
     text-align: center;
     /* border: 2px solid var(--accent-two); */
     padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: #53477c 5px 5px 10px;
 }
 
 #catalogue section a img {
@@ -213,7 +223,7 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1/1.1;
     object-position: top;
     overflow: hidden;
-    box-shadow: #888888 5px 5px 10px;
+    /* box-shadow: #888888 5px 5px 10px; */
 }
 
 #catalogue section a {
@@ -223,8 +233,9 @@ h1, h2, h3, h4, h5, button {
 }
 
 h1 {
+    background-color: #f9f9f9;
     text-align: center;
-    border: 2px solid var(--accent-two);
+    border: 2px solid var(--secondary);
     padding: 10px;
     margin-top: -70px
 }
@@ -245,9 +256,9 @@ footer a {
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    box-shadow: 5px 5px 5px #BBBBBB;
+    box-shadow: #53477c 5px 5px 10px;
 }
 
 footer a:hover {
-    box-shadow: 5px 5px 5px #888888;
+    background-color: #333333;
 }
