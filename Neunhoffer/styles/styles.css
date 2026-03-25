@@ -8,13 +8,16 @@
 body {
     font-family: Georgia, serif;
     font-size: 1em;
-    background-color: var(--accent-two);
+    background-image: linear-gradient(var(--accent-two), var(--accent-one));
 }
 
 header {
     text-align: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
     margin-bottom: 100px;
 }
 
@@ -65,6 +68,7 @@ h1, h2, h3, h4, h5, button {
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: var(--primary);
   border-bottom: 1px solid black;
+  margin-bottom: -1px;
 }
 
 .navbar a:hover {
@@ -130,6 +134,16 @@ h1, h2, h3, h4, h5, button {
     box-shadow: #53477c 5px 5px 10px;
 }
 
+section { /* section and section:hover are abominations to all things sacred
+    in css, but since I'm only using sections for one specific thing, I'm going
+    to allow it so I don't have to create a whole new class*/
+    transition-duration: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.03);
+}
+
 #color-wear section a img {
     width: 80%;
     height: auto;
@@ -137,7 +151,7 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1/1.1;
     object-position: top;
     overflow: hidden;
-    border: solid red 2px;
+    border: solid black 2px;
     border-radius: 5px;
     /* box-shadow: #888888 5px 5px 10px; */
 }
@@ -159,6 +173,7 @@ h1, h2, h3, h4, h5, button {
     background-color: #f9f9f9;
     /* border: 2px solid var(--accent-one); */
     box-shadow: #53477c 5px 5px 10px;
+    border-radius: 3px;
 }
 
 #seasonal-wear section a {
@@ -173,8 +188,11 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1.2/1;
     object-position: top;
     overflow: hidden;
-    padding: 10px;
+    padding: 0px;
+    margin: 10px;
     float: left;
+    border: solid black 2px;
+    border-radius: 5px;
 }
 
 #seasonal-wear section a h3 {
@@ -223,6 +241,8 @@ h1, h2, h3, h4, h5, button {
     aspect-ratio: 1/1.1;
     object-position: top;
     overflow: hidden;
+    border: solid black 2px;
+    border-radius: 5px;
     /* box-shadow: #888888 5px 5px 10px; */
 }
 
