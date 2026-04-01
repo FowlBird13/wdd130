@@ -174,3 +174,24 @@ footer {
     padding: 10px;
 }
 
+#reports h2 {
+    background-color: #ff8966;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#reports p a {
+    background-color: #ff8966;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0 4px 0 4px;
+    box-shadow: #706c61 3px 3px 3px;
+    transition-duration: 0.25s;
+}
+
+#reports p a:hover {
+    color: white;
+    background-color: #e5446d;
+    box-shadow: #706c61 10px 10px 5px;
+}
